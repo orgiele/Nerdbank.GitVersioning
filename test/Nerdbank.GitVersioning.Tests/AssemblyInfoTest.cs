@@ -70,7 +70,7 @@ namespace AssemblyInfo
 #if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [<System.CodeDom.Compiler.GeneratedCode(""{AssemblyVersionInfo.GeneratorName}"",""{AssemblyVersionInfo.GeneratorVersion}"")>]
 #endif
-#if NETFRAMEWORK || NETCOREAPP || NETSTANDARD2_0 || NETSTANDARD2_1
+#if NETSTANDARD2_0 || NETSTANDARD2_1 || NETFRAMEWORK || NETCOREAPP2_0 || NETCOREAPP2_1 || NETCOREAPP2_2 || NETCOREAPP3_0 || NETCOREAPP3_1 || NET5_0_OR_GREATER
 [<System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>]
 #endif
 type internal ThisAssembly() =
@@ -146,7 +146,7 @@ do()
 {(thisAssemblyClass.GetValueOrDefault(true) ? $@"#if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [System.CodeDom.Compiler.GeneratedCode(""{AssemblyVersionInfo.GeneratorName}"",""{AssemblyVersionInfo.GeneratorVersion}"")]
 #endif
-#if NETFRAMEWORK || NETCOREAPP || NETSTANDARD2_0 || NETSTANDARD2_1
+#if NETSTANDARD2_0 || NETSTANDARD2_1 || NETFRAMEWORK || NETCOREAPP2_0 || NETCOREAPP2_1 || NETCOREAPP2_2 || NETCOREAPP3_0 || NETCOREAPP3_1 || NET5_0_OR_GREATER
 [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 #endif
 internal static partial class ThisAssembly {{
@@ -200,7 +200,7 @@ internal static partial class ThisAssembly {{
 <Assembly: System.Reflection.AssemblyVersionAttribute(""1.3.0.0"")>
 <Assembly: System.Reflection.AssemblyFileVersionAttribute(""1.3.1.0"")>
 <Assembly: System.Reflection.AssemblyInformationalVersionAttribute("""")>
-{(thisAssemblyClass.GetValueOrDefault(true) ? $@"#If NETFRAMEWORK  Or  NETCOREAPP  Or  NETSTANDARD2_0  Or  NETSTANDARD2_1 Then
+{(thisAssemblyClass.GetValueOrDefault(true) ? $@"#If NETSTANDARD2_0  Or  NETSTANDARD2_1  Or  NETFRAMEWORK  Or  NETCOREAPP2_0  Or  NETCOREAPP2_1  Or  NETCOREAPP2_2  Or  NETCOREAPP3_0  Or  NETCOREAPP3_1  Or  NET5_0_OR_GREATER Then
 <System.CodeDom.Compiler.GeneratedCode(""{AssemblyVersionInfo.GeneratorName}"",""{AssemblyVersionInfo.GeneratorVersion}"")>
 <System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>
 Partial Friend NotInheritable Class ThisAssembly
